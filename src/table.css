@@ -1,0 +1,56 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #007bff;
+    /* primary color */
+    color: #fff;
+    /* white text */
+    border: none;
+    border-radius: 18px;
+    /* rounded corners */
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    height: 300px;
+    overflow: auto;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.fixed-left,
+.fixed-right {
+    position: sticky;
+    left: 0;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+.fixed-right {
+    position: sticky;
+    right: 0;
+}
