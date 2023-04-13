@@ -1,9 +1,14 @@
-version: "3"
+version: "2.0"
 
 services:
-  app:
+  marketing_gateway_page:
+    container_name: marketing_gateway_page
     image: quess-dashboard:0.0.1
-    ports:
-      - "3000:3000"
     volumes:
-      - .:/app
+      - ./app:/app
+    ports:
+      - 80:80
+
+networks:
+  defaults:
+    driver: bridge
