@@ -1,7 +1,9 @@
-version: '3'
+version: "3"
 
 services:
   app:
-    build: .
+    image: quess-dashboard:0.0.1
     ports:
       - "3000:3000"
+    volumes:
+      - .:/app
