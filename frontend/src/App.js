@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="container">
-      <button>Refresh</button>
+      <button onClick={() => callApi()}>Refresh</button>
       <div className="table-container">
         <div className="table-scroll">
           <table>
